@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     formSubmit (e) {
-      alert('Submitted')
+      this.$emit('formSubmit', this.textToTranslate)
       e.preventDefault()
     }
   }

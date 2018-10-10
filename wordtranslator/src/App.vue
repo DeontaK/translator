@@ -2,7 +2,7 @@
   <div id="app">
     <h1>Word Translator</h1>
     <h5>Powered by Vue.js</h5>
-    <translate-form/>
+    <translate-form v-on:formSubmit="translateText"></translate-form>
   </div>
 </template>
 
@@ -13,6 +13,11 @@ export default {
   name: 'App',
   components: {
     TranslateForm
+  },
+  methods: {
+    translateText: function (text) {
+      
+    }
   }
 }
 </script>
